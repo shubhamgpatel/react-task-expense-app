@@ -1,0 +1,117 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+}
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+/* src/styles/App.css */
+.header-bg {
+  background-color: #847fe5;
+  padding: 20px;
+  text-align: center;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+/* Custom Css for Header */
+.header-bg {
+  display: flex;
+  justify-content: space-between; /* Aligns text on the left and links on the right */
+  align-items: center;  /* Vertically centers the content */
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow */
+}
+
+.header-left h1 {
+  margin: 0;  /* Removes the margin of the header */
+  font-size: 24px;
+  color: #333;
+}
+
+.header-right {
+  display: flex;
+  justify-content: flex-end; /* Aligns the list to the right */
+}
+
+.nav-links {
+  list-style-type: none;  /* Removes the default list bullets */
+  display: flex;
+  gap: 20px;  /* Adds space between each list item */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a{
+  cursor: pointer;  /* Makes the list items clickable */
+  transition: color 0.3s ease;  /* Adds a smooth transition on hover */
+  color: #252c65;
+}
+
+.nav-links li:hover {
+  color: #007bff;  /* Changes color on hover */
+}
+/* Hamburger menu icon styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-bg {
+    flex-direction: column;  /* Stacks the header content vertically */
+    align-items: flex-start; /* Aligns the items to the left */
+  }
+
+  .header-right {
+    width: 100%; /* Make the right section full width */
+    text-align: center;  /* Centers the navigation links */
+    margin-top: 10px;
+    display: none;
+    /* display: ${props => (props.menuOpen ? 'block' : 'none')};  */
+  }
+
+  .nav-links {
+    flex-direction: column;  /* Stacks the links vertically */
+    gap: 10px;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .header-right.open {
+    display: block; /* When the menu is open, display it */
+  }
+
+  .header-left h1 {
+    font-size: 20px;  /* Decreases font size for smaller screens */
+  }
+}

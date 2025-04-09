@@ -1,12 +1,12 @@
 # Shubham README
 
-express → Backend framework
-mongoose → MongoDB ODM (Object Data Modeling)
-dotenv → Load environment variables
-cors → Handle cross-origin requests
-body-parser → Parse request body
-bcryptjs → Hash passwords
-jsonwebtoken → For user authentication
+## express → Backend framework
+## mongoose → MongoDB ODM (Object Data Modeling)
+## dotenv → Load environment variables
+## cors → Handle cross-origin requests
+## body-parser → Parse request body
+## bcryptjs → Hash passwords
+## jsonwebtoken → For user authentication
 
 
 How useSelector Connects to the Redux Store
